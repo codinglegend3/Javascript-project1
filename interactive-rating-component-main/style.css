@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(216, 12%, 8%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#rating{
+	width: 77%;
+	height: 60%;
+	background-color: hsl(213, 19%, 18%);
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5em;
+}
+
+#rating img{
+	width: 1em;
+	height: auto;
+	background-color: hsl(216, 12%, 8%, 40%);
+	padding: 0.5em;
+	border-radius: 50%;
+	align-self: flex-start;
+	justify-self: center;
+}
+
+#rating h2{
+	color: hsl(0, 0%, 100%);
+	font-family: "Overpass", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+  	width: 100%;
+  	height: 10%;
+  	justify-self: center;
+  	align-self: flex-start;
+  	text-align: left;
+}
+
+#rating p{
+	font-family: "Overpass", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+  	width: 100%;
+  	height: 20%;
+  	font-size: 15px;
+  	justify-self: center;
+  	align-self: flex-start;
+  	text-align: left;
+  	color: hsl(217, 12%, 63%);
+}
+
+#rating .numbers{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	justify-self: center;
+	justify-content: space-evenly;
+	margin-bottom: 1em;
+}
+
+#rating .numbers h4{
+	background-color: hsl(217, 12%, 25%);
+	padding-top: 0.9em;
+	padding-bottom: 0.9em;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	align-self: center;
+	text-align: center;
+	border-radius: 100%;
+	color: hsl(217, 12%, 63%);
+	font-optical-sizing: auto;
+  	font-weight: 700;
+  	font-style: normal;
+  	cursor: pointer;
+  	transition: all 0.7s ease;
+}
+#rating .numbers h4:hover{
+	background-color: hsl(25, 97%, 53%);
+	cursor: pointer;
+}
+#rating .numbers h4:active{
+	background-color: hsl(25, 97%, 53%);
+}
+#rating button{
+	padding: 0.5em;
+	border: none;
+	border-radius: 2em;
+	outline: none;
+	font-family: "Overpass", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+  	font-size: 1em;
+  	letter-spacing: 0.25em;
+  	color: hsl(213, 19%, 18%);
+  	background-color: hsl(25, 97%, 53%);
+  	transition: all 0.7s ease;
+}
+
+#rating button:hover{
+	background-color: hsl(0, 0%, 100%);
+}
+
+/*thankyou start*/
+
+#ThankYou{
+	width: 80%;
+	height: 60%;
+	background-color: hsl(213, 19%, 18%);
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1.5em;
+	align-items: center;
+	border-radius: 1em;
+}
+
+#ThankYou img{
+	width: auto;
+	height: auto;
+	align-self: center;
+	justify-self: center;
+}
+
+#ThankYou h5{
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(216, 12%, 8%);
+	padding: 0.5em 1em;
+	border-radius: 1em;
+	align-self: center;
+	justify-self: center;
+}
+
+#ThankYou h1{
+	font-family: "Overpass", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+  	color: hsl(0, 0%, 100%);
+  	margin-block-end: 0;
+  	margin-block-start: 0;
+}
+
+#ThankYou p{
+	font-family: "Overpass", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+  	width: auto;
+  	height: auto;
+  	font-size: 15px;
+  	justify-self: center;
+  	align-self: flex-start;
+  	text-align: center;
+  	color: hsl(217, 12%, 63%);
+}
+
+@media (min-width: 700px){
+	#rating{
+	width: 50%;
+	height: 60%;
+	}
+	#ThankYou{
+	width: 50%;
+	height: 60%;
+	}
+}
+
+@media (min-width: 800px){
+	#rating,#ThankYou{
+	width: 40%;
+	height: 60%;
+	}
+
+}
+
+@media (min-width: 1000px){
+	#rating,#ThankYou{
+	width: 30%;
+	height: 60%;
+	}
+}

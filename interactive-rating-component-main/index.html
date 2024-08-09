@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- Rating state start -->
+<header>
+
+    <section id="rating" style="display:flex;">
+    
+    <img src="images/icon-star.svg">
+
+    <h2>How did we do?</h2>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div class="numbers">
+      <h4 id="h4-1" onclick="span1()">1</h4>
+      <h4 id="h4-2" onclick="span2()">2</h4>
+      <h4 id="h4-3" onclick="span3()">3</h4>
+      <h4 id="h4-4" onclick="span4()">4</h4>
+      <h4 id="h4-5" onclick="span5()">5</h4>
+    </div>
+
+<button onclick="marryme()">Submit</button>
+  
+</section>
+  <!-- Rating state end -->
+
+
+  <!-- Thank you state start -->
+
+<section id="ThankYou" style="display: none;">
+
+  <img src="images/illustration-thank-you.svg">
+  <h5>You selected <span> <!-- Add rating here --></span> out of 5</h5>
+
+  <h1>Thank you!</h1>
+
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+
+</section>
+
+  <!-- Thank you state end -->
+
+</header>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
